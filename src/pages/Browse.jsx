@@ -1,16 +1,25 @@
-import { useState, useContext } from 'react';
-import { ActivePageContext } from '../context/ActivePageContext';
+import { useState } from 'react';
 import BookCard from '../components/BookCard';
+import BookOverlay from '../components/BookOverlay';
 import booksData from '../data/books.json';
 import '../styles/Browse.css';
 
 function Browse() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [selectedBook, setSelectedBook] = useState(null);
 
   const filteredBooks = booksData.filter(book =>
     book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
     book.author.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const handleMoreInfo = (book) => {
+    setSelectedBook(book);
+  };
+
+  const handleCloseOverlay = () => {
+    setSelectedBook(null);
+  };
 
   return (
     <div className="browse-container">
@@ -28,9 +37,13 @@ function Browse() {
 
       <div className="books-grid">
         {filteredBooks.map((book) => (
-          <BookCard key={book.id} book={book} />
+          <BookCard key={book.id} book={book} onMoreInfo={handleMoreInfo} />
         ))}
       </div>
+
+      {selectedBook && (
+        <BookOverlay book={selectedBook} onClose={handleCloseOverlay} />
+      )}
     </div>
   );
 }

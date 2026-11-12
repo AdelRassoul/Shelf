@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import '../styles/BookCard.css';
 
-function BookCard({ book }) {
+function BookCard({ book, onMoreInfo }) {
   const [imageError, setImageError] = useState(false);
 
   const handleImageError = () => {
@@ -27,7 +27,9 @@ function BookCard({ book }) {
         <p className="book-author">by {book.author}</p>
         <p className="book-price">${book.price}</p>
         <div className="book-actions">
-          <button className="btn-more-info">More Info</button>
+          <button className="btn-more-info" onClick={() => onMoreInfo(book)}>
+            More Info
+          </button>
           <button className="btn-add-cart">Add to Cart</button>
         </div>
       </div>

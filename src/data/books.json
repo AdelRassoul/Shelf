@@ -4,119 +4,399 @@
     "title": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "price": 15.99,
-    "image": "https://covers.openlibrary.org/b/id/8432047-L.jpg",
-    "description": "A classic novel about the American Dream, wealth, and love in the Jazz Age. Set in the 1920s, it follows the mysterious Jay Gatsby and his obsession with Daisy Buchanan."
+    "image": "https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg",
+    "description": "A classic novel about the American Dream, wealth, and love in the Jazz Age."
   },
   {
     "id": 2,
     "title": "1984",
     "author": "George Orwell",
     "price": 12.99,
-    "image": "https://covers.openlibrary.org/b/id/12749742-L.jpg",
-    "description": "A dystopian social science fiction novel warning about totalitarianism. Set in a world of perpetual war, government surveillance, and public manipulation."
+    "image": "https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg",
+    "description": "A dystopian social science fiction novel warning about totalitarianism."
   },
   {
     "id": 3,
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "price": 14.50,
-    "image": "https://covers.openlibrary.org/b/id/12645118-L.jpg",
-    "description": "A powerful story about racial injustice and the loss of innocence in the Deep South. Told through the eyes of young Scout Finch as her father defends a black man."
+    "image": "https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg",
+    "description": "A powerful story about racial injustice and the loss of innocence in the Deep South."
   },
   {
     "id": 4,
     "title": "The Catcher in the Rye",
     "author": "J.D. Salinger",
     "price": 13.00,
-    "image": "https://covers.openlibrary.org/b/id/12884230-L.jpg",
-    "description": "A classic story about teenage angst, alienation, and growing up. Follows Holden Caulfield's experiences in New York City after being expelled from prep school."
+    "image": "https://covers.openlibrary.org/b/isbn/9780316769488-L.jpg",
+    "description": "A classic story about teenage angst, alienation, and growing up."
   },
   {
     "id": 5,
     "title": "Pride and Prejudice",
     "author": "Jane Austen",
     "price": 11.99,
-    "image": "https://covers.openlibrary.org/b/id/12645062-L.jpg",
-    "description": "A romantic novel about love, reputation, and class in early 19th century England. Centers on the turbulent relationship between Elizabeth Bennet and Mr. Darcy."
+    "image": "https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg",
+    "description": "A romantic novel about love, reputation, and class in early 19th century England."
   },
   {
     "id": 6,
     "title": "The Hobbit",
     "author": "J.R.R. Tolkien",
     "price": 16.50,
-    "image": "https://covers.openlibrary.org/b/id/14627222-L.jpg",
-    "description": "A fantasy adventure about Bilbo Baggins, a hobbit who embarks on an unexpected journey with dwarves to reclaim their homeland from the dragon Smaug."
+    "image": "https://covers.openlibrary.org/b/isbn/9780547928227-L.jpg",
+    "description": "A fantasy adventure about Bilbo Baggins and his unexpected journey."
   },
   {
     "id": 7,
     "title": "Harry Potter and the Sorcerer's Stone",
     "author": "J.K. Rowling",
     "price": 18.99,
-    "image": "https://covers.openlibrary.org/b/id/12816062-L.jpg",
-    "description": "A young wizard discovers his magical heritage on his eleventh birthday and begins his journey at Hogwarts School of Witchcraft and Wizardry."
+    "image": "https://covers.openlibrary.org/b/isbn/9780590353427-L.jpg",
+    "description": "A young wizard discovers his magical heritage and begins his journey at Hogwarts."
   },
   {
     "id": 8,
     "title": "The Lord of the Rings",
     "author": "J.R.R. Tolkien",
     "price": 22.99,
-    "image": "https://covers.openlibrary.org/b/id/14627224-L.jpg",
-    "description": "An epic high-fantasy novel that follows hobbits as they quest to destroy the One Ring and defeat the Dark Lord Sauron."
+    "image": "https://covers.openlibrary.org/b/isbn/9780618640157-L.jpg",
+    "description": "An epic high-fantasy novel following hobbits on a quest to destroy the One Ring."
   },
   {
     "id": 9,
     "title": "Brave New World",
     "author": "Aldous Huxley",
     "price": 13.50,
-    "image": "https://covers.openlibrary.org/b/id/12749744-L.jpg",
-    "description": "A dystopian novel set in a futuristic World State, where citizens are engineered through artificial selection and conditioned by psychological manipulation."
+    "image": "https://covers.openlibrary.org/b/isbn/9780060850524-L.jpg",
+    "description": "A dystopian novel set in a futuristic World State of engineered citizens."
   },
   {
     "id": 10,
     "title": "The Alchemist",
     "author": "Paulo Coelho",
     "price": 14.99,
-    "image": "https://covers.openlibrary.org/b/id/12816064-L.jpg",
-    "description": "A philosophical novel about a young Andalusian shepherd who dreams of finding a worldly treasure located in the Egyptian pyramids."
+    "image": "https://covers.openlibrary.org/b/isbn/9780062315007-L.jpg",
+    "description": "A philosophical novel about a shepherd searching for treasure in Egypt."
   },
   {
     "id": 11,
     "title": "Fahrenheit 451",
     "author": "Ray Bradbury",
     "price": 12.50,
-    "image": "https://covers.openlibrary.org/b/id/12749746-L.jpg",
-    "description": "A dystopian novel set in a future American society where books are outlawed and firemen burn any that are found."
+    "image": "https://covers.openlibrary.org/b/isbn/9781451673319-L.jpg",
+    "description": "A dystopian novel where books are outlawed and firemen burn them."
   },
   {
     "id": 12,
     "title": "Jane Eyre",
     "author": "Charlotte Brontë",
     "price": 13.99,
-    "image": "https://covers.openlibrary.org/b/id/12645064-L.jpg",
-    "description": "A novel that follows the emotions and experiences of its eponymous heroine, including her growth to adulthood and her love for Mr. Rochester."
+    "image": "https://covers.openlibrary.org/b/isbn/9780141441146-L.jpg",
+    "description": "A novel following the emotions and experiences of its eponymous heroine."
   },
   {
     "id": 13,
     "title": "The Hunger Games",
     "author": "Suzanne Collins",
     "price": 15.50,
-    "image": "https://covers.openlibrary.org/b/id/12816066-L.jpg",
-    "description": "A dystopian novel set in a post-apocalyptic nation where teenagers are forced to participate in a televised death match."
+    "image": "https://covers.openlibrary.org/b/isbn/9780439023481-L.jpg",
+    "description": "A dystopian novel where teenagers compete in a televised death match."
   },
   {
     "id": 14,
     "title": "Dune",
     "author": "Frank Herbert",
     "price": 17.99,
-    "image": "https://covers.openlibrary.org/b/id/14627226-L.jpg",
-    "description": "A science fiction novel set in the distant future amidst a feudal interstellar society, focusing on young Paul Atreides on the desert planet Arrakis."
+    "image": "https://covers.openlibrary.org/b/isbn/9780441172719-L.jpg",
+    "description": "A science fiction novel set on the desert planet Arrakis."
   },
   {
     "id": 15,
     "title": "The Da Vinci Code",
     "author": "Dan Brown",
     "price": 14.50,
-    "image": "https://covers.openlibrary.org/b/id/12816068-L.jpg",
-    "description": "A mystery thriller novel that follows symbologist Robert Langdon as he investigates a murder in the Louvre Museum and uncovers a religious mystery."
+    "image": "https://covers.openlibrary.org/b/isbn/9780307474278-L.jpg",
+    "description": "A mystery thriller following symbologist Robert Langdon."
+  },
+  {
+    "id": 16,
+    "title": "Animal Farm",
+    "author": "George Orwell",
+    "price": 10.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780451526342-L.jpg",
+    "description": "An allegorical novella about a group of farm animals who rebel against their human farmer."
+  },
+  {
+    "id": 17,
+    "title": "The Chronicles of Narnia",
+    "author": "C.S. Lewis",
+    "price": 19.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780066238500-L.jpg",
+    "description": "A fantasy series about children who discover the magical land of Narnia."
+  },
+  {
+    "id": 18,
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "price": 12.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780141439556-L.jpg",
+    "description": "A tale of passionate and destructive love on the Yorkshire moors."
+  },
+  {
+    "id": 19,
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "price": 11.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780141439570-L.jpg",
+    "description": "A philosophical novel about a young man who sells his soul for eternal youth."
+  },
+  {
+    "id": 20,
+    "title": "Crime and Punishment",
+    "author": "Fyodor Dostoevsky",
+    "price": 14.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780140449136-L.jpg",
+    "description": "A psychological novel about a man who commits murder and faces moral dilemmas."
+  },
+  {
+    "id": 21,
+    "title": "The Odyssey",
+    "author": "Homer",
+    "price": 13.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780140268867-L.jpg",
+    "description": "An ancient Greek epic poem following Odysseus's journey home after the Trojan War."
+  },
+  {
+    "id": 22,
+    "title": "Moby Dick",
+    "author": "Herman Melville",
+    "price": 15.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780142437247-L.jpg",
+    "description": "The narrative of Captain Ahab's obsessive quest to kill the white whale Moby Dick."
+  },
+  {
+    "id": 23,
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "price": 18.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780143039990-L.jpg",
+    "description": "A novel that chronicles French invasion of Russia and its impact on Tsarist society."
+  },
+  {
+    "id": 24,
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "price": 16.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780374528379-L.jpg",
+    "description": "A passionate philosophical novel about faith, doubt, and reason."
+  },
+  {
+    "id": 25,
+    "title": "Les Misérables",
+    "author": "Victor Hugo",
+    "price": 17.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780140444308-L.jpg",
+    "description": "A French historical novel about love, revolution, and redemption in 19th century France."
+  },
+  {
+    "id": 26,
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "price": 16.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780140449266-L.jpg",
+    "description": "An adventure novel about a man wrongfully imprisoned who escapes and seeks revenge."
+  },
+  {
+    "id": 27,
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "price": 12.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780141439846-L.jpg",
+    "description": "A Gothic horror novel about the vampire Count Dracula's attempt to move to England."
+  },
+  {
+    "id": 28,
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "price": 11.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780141439471-L.jpg",
+    "description": "A Gothic novel about a young scientist who creates a sapient creature."
+  },
+  {
+    "id": 29,
+    "title": "A Tale of Two Cities",
+    "author": "Charles Dickens",
+    "price": 13.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780141439600-L.jpg",
+    "description": "A historical novel set in London and Paris before and during the French Revolution."
+  },
+  {
+    "id": 30,
+    "title": "Great Expectations",
+    "author": "Charles Dickens",
+    "price": 14.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780141439563-L.jpg",
+    "description": "A coming-of-age story about an orphan nicknamed Pip."
+  },
+  {
+    "id": 31,
+    "title": "Of Mice and Men",
+    "author": "John Steinbeck",
+    "price": 11.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780140177398-L.jpg",
+    "description": "A novella about two displaced migrant ranch workers in California."
+  },
+  {
+    "id": 32,
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck",
+    "price": 15.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780143039433-L.jpg",
+    "description": "A novel about a poor family of tenant farmers driven from Oklahoma."
+  },
+  {
+    "id": 33,
+    "title": "Slaughterhouse-Five",
+    "author": "Kurt Vonnegut",
+    "price": 13.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780385333849-L.jpg",
+    "description": "An anti-war novel about the experiences of Billy Pilgrim during World War II."
+  },
+  {
+    "id": 34,
+    "title": "Catch-22",
+    "author": "Joseph Heller",
+    "price": 14.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9781451626650-L.jpg",
+    "description": "A satirical novel set during World War II about a bombardier."
+  },
+  {
+    "id": 35,
+    "title": "One Flew Over the Cuckoo's Nest",
+    "author": "Ken Kesey",
+    "price": 14.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780143105022-L.jpg",
+    "description": "A novel set in an Oregon psychiatric hospital."
+  },
+  {
+    "id": 36,
+    "title": "Beloved",
+    "author": "Toni Morrison",
+    "price": 15.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9781400033416-L.jpg",
+    "description": "A novel inspired by the story of an enslaved woman who kills her daughter."
+  },
+  {
+    "id": 37,
+    "title": "The Color Purple",
+    "author": "Alice Walker",
+    "price": 14.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780156028356-L.jpg",
+    "description": "An epistolary novel about African American women in the South."
+  },
+  {
+    "id": 38,
+    "title": "Invisible Man",
+    "author": "Ralph Ellison",
+    "price": 15.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780679732761-L.jpg",
+    "description": "A novel about the social and intellectual issues facing African Americans."
+  },
+  {
+    "id": 39,
+    "title": "The Sun Also Rises",
+    "author": "Ernest Hemingway",
+    "price": 13.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780743297332-L.jpg",
+    "description": "A novel about a group of American and British expatriates in Europe."
+  },
+  {
+    "id": 40,
+    "title": "A Farewell to Arms",
+    "author": "Ernest Hemingway",
+    "price": 14.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780684801469-L.jpg",
+    "description": "A novel about a romance between an American and a British nurse during WWI."
+  },
+  {
+    "id": 41,
+    "title": "The Old Man and the Sea",
+    "author": "Ernest Hemingway",
+    "price": 12.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780684801223-L.jpg",
+    "description": "A short novel about an aging Cuban fisherman's struggle with a giant marlin."
+  },
+  {
+    "id": 42,
+    "title": "For Whom the Bell Tolls",
+    "author": "Ernest Hemingway",
+    "price": 15.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780684803357-L.jpg",
+    "description": "A novel about a young American volunteer in the Spanish Civil War."
+  },
+  {
+    "id": 43,
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "price": 12.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780679720201-L.jpg",
+    "description": "A novel about an indifferent man who kills an Arab in French Algeria."
+  },
+  {
+    "id": 44,
+    "title": "The Trial",
+    "author": "Franz Kafka",
+    "price": 13.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780805209990-L.jpg",
+    "description": "A novel about a man arrested and prosecuted by a remote authority."
+  },
+  {
+    "id": 45,
+    "title": "Metamorphosis",
+    "author": "Franz Kafka",
+    "price": 11.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780553213690-L.jpg",
+    "description": "A novella about a man who wakes up transformed into a giant insect."
+  },
+  {
+    "id": 46,
+    "title": "The Myth of Sisyphus",
+    "author": "Albert Camus",
+    "price": 14.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780679733737-L.jpg",
+    "description": "A philosophical essay about the concept of the absurd."
+  },
+  {
+    "id": 47,
+    "title": "Thus Spoke Zarathustra",
+    "author": "Friedrich Nietzsche",
+    "price": 15.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780140441185-L.jpg",
+    "description": "A philosophical novel about the fictional prophet Zarathustra."
+  },
+  {
+    "id": 48,
+    "title": "The Republic",
+    "author": "Plato",
+    "price": 13.50,
+    "image": "https://covers.openlibrary.org/b/isbn/9780140449143-L.jpg",
+    "description": "A Socratic dialogue concerning justice and the order of the city-state."
+  },
+  {
+    "id": 49,
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "price": 12.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780140449334-L.jpg",
+    "description": "A series of personal writings by the Roman Emperor on Stoic philosophy."
+  },
+  {
+    "id": 50,
+    "title": "The Prince",
+    "author": "Niccolò Machiavelli",
+    "price": 11.99,
+    "image": "https://covers.openlibrary.org/b/isbn/9780140449150-L.jpg",
+    "description": "A political treatise about acquiring and maintaining political power."
   }
 ]

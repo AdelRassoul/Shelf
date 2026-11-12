@@ -1,0 +1,133 @@
+.overlay-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 2rem;
+}
+
+.overlay-content {
+  background: white;
+  border-radius: 12px;
+  max-width: 900px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  z-index: 1;
+}
+
+.overlay-close:hover {
+  background: #34495e;
+}
+
+.overlay-body {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.overlay-image-container {
+  flex: 0 0 300px;
+}
+
+.overlay-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.overlay-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.overlay-author {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.overlay-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 1.5rem;
+}
+
+.overlay-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .overlay-backdrop {
+    padding: 1rem;
+  }
+
+  .overlay-body {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .overlay-image-container {
+    flex: 0 0 auto;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .overlay-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .overlay-author {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .overlay-price {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .overlay-description {
+    font-size: 1rem;
+  }
+}
