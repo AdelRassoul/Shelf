@@ -28,8 +28,8 @@ function Navbar({ cartCount }) {
             Cart {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
           </Link>
         </li>
-        <li><Link to="/about" className={activePage === '/about' ? 'active' : ''} onClick={() => handleLinkClick('/about')}>About</Link></li>
-        <li><Link to="/contact" className={activePage === '/contact' ? 'active' : ''} onClick={() => handleLinkClick('/contact')}>Contact</Link></li>
+        <li><Link to="/about" className={activePage === '/about' ? 'active' : ''} onClick={() => handleLinkClick('/about')}>About Us</Link></li>
+        <li><Link to="/contact" className={activePage === '/contact' ? 'active' : ''} onClick={() => handleLinkClick('/contact')}>Contact Us</Link></li>
       </ul>
 
       <div className="navbar-right">

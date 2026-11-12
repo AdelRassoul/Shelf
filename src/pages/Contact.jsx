@@ -8,6 +8,13 @@ function Contact({ showM }) {
     subject: '',
     message: ''
   });
+  
+  const [emailError, setEmailError] = useState('');
+
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,13 +22,28 @@ function Contact({ showM }) {
       ...prev,
       [name]: value
     }));
+    
+    if (name === 'email') {
+      if (value && !validateEmail(value)) {
+        setEmailError('Please enter a valid email address');
+      } else {
+        setEmailError('');
+      }
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    if (!validateEmail(formData.email)) {
+      setEmailError('Please enter a valid email address');
+      return;
+    }
+    
     const messageText = `Message sent!\n\nName: ${formData.name}\nEmail: ${formData.email}\nSubject: ${formData.subject}\nMessage: ${formData.message}`;
     showM(messageText);
     setFormData({ name: '', email: '', subject: '', message: '' });
+    setEmailError('');
   };
 
   return (
@@ -50,8 +72,10 @@ function Contact({ showM }) {
             name="email"
             value={formData.email}
             onChange={handleChange}
+            className={emailError ? 'error' : ''}
             required
           />
+          {emailError && <span className="error-message">{emailError}</span>}
         </div>
 
         <div className="form-group">
