@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "price": 15.99,
+    "image": "https://covers.openlibrary.org/b/id/8432047-L.jpg",
+    "description": "A classic novel about the American Dream, wealth, and love in the Jazz Age. Set in the 1920s, it follows the mysterious Jay Gatsby and his obsession with Daisy Buchanan."
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "author": "George Orwell",
+    "price": 12.99,
+    "image": "https://covers.openlibrary.org/b/id/12749742-L.jpg",
+    "description": "A dystopian social science fiction novel warning about totalitarianism. Set in a world of perpetual war, government surveillance, and public manipulation."
+  },
+  {
+    "id": 3,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "price": 14.50,
+    "image": "https://covers.openlibrary.org/b/id/12645118-L.jpg",
+    "description": "A powerful story about racial injustice and the loss of innocence in the Deep South. Told through the eyes of young Scout Finch as her father defends a black man."
+  },
+  {
+    "id": 4,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "price": 13.00,
+    "image": "https://covers.openlibrary.org/b/id/12884230-L.jpg",
+    "description": "A classic story about teenage angst, alienation, and growing up. Follows Holden Caulfield's experiences in New York City after being expelled from prep school."
+  },
+  {
+    "id": 5,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "price": 11.99,
+    "image": "https://covers.openlibrary.org/b/id/12645062-L.jpg",
+    "description": "A romantic novel about love, reputation, and class in early 19th century England. Centers on the turbulent relationship between Elizabeth Bennet and Mr. Darcy."
+  },
+  {
+    "id": 6,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "price": 16.50,
+    "image": "https://covers.openlibrary.org/b/id/14627222-L.jpg",
+    "description": "A fantasy adventure about Bilbo Baggins, a hobbit who embarks on an unexpected journey with dwarves to reclaim their homeland from the dragon Smaug."
+  },
+  {
+    "id": 7,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "price": 18.99,
+    "image": "https://covers.openlibrary.org/b/id/12816062-L.jpg",
+    "description": "A young wizard discovers his magical heritage on his eleventh birthday and begins his journey at Hogwarts School of Witchcraft and Wizardry."
+  },
+  {
+    "id": 8,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "price": 22.99,
+    "image": "https://covers.openlibrary.org/b/id/14627224-L.jpg",
+    "description": "An epic high-fantasy novel that follows hobbits as they quest to destroy the One Ring and defeat the Dark Lord Sauron."
+  },
+  {
+    "id": 9,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "price": 13.50,
+    "image": "https://covers.openlibrary.org/b/id/12749744-L.jpg",
+    "description": "A dystopian novel set in a futuristic World State, where citizens are engineered through artificial selection and conditioned by psychological manipulation."
+  },
+  {
+    "id": 10,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "price": 14.99,
+    "image": "https://covers.openlibrary.org/b/id/12816064-L.jpg",
+    "description": "A philosophical novel about a young Andalusian shepherd who dreams of finding a worldly treasure located in the Egyptian pyramids."
+  },
+  {
+    "id": 11,
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "price": 12.50,
+    "image": "https://covers.openlibrary.org/b/id/12749746-L.jpg",
+    "description": "A dystopian novel set in a future American society where books are outlawed and firemen burn any that are found."
+  },
+  {
+    "id": 12,
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "price": 13.99,
+    "image": "https://covers.openlibrary.org/b/id/12645064-L.jpg",
+    "description": "A novel that follows the emotions and experiences of its eponymous heroine, including her growth to adulthood and her love for Mr. Rochester."
+  },
+  {
+    "id": 13,
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "price": 15.50,
+    "image": "https://covers.openlibrary.org/b/id/12816066-L.jpg",
+    "description": "A dystopian novel set in a post-apocalyptic nation where teenagers are forced to participate in a televised death match."
+  },
+  {
+    "id": 14,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "price": 17.99,
+    "image": "https://covers.openlibrary.org/b/id/14627226-L.jpg",
+    "description": "A science fiction novel set in the distant future amidst a feudal interstellar society, focusing on young Paul Atreides on the desert planet Arrakis."
+  },
+  {
+    "id": 15,
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "price": 14.50,
+    "image": "https://covers.openlibrary.org/b/id/12816068-L.jpg",
+    "description": "A mystery thriller novel that follows symbologist Robert Langdon as he investigates a murder in the Louvre Museum and uncovers a religious mystery."
+  }
+]
