@@ -1,6 +1,6 @@
 .home-container {
   width: 100%;
-  height: calc(100vh - 80px - 80px); /* Fixed height, no scroll */
+  height: calc(100vh - 140px - 80px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,59 +8,87 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.home-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
 }
 
 .home-content {
+  position: relative;
   text-align: center;
   color: white;
   padding: 2rem;
+  max-width: 700px;
 }
 
 .home-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 .home-content p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  font-size: 1.4rem;
+  margin-bottom: 2.5rem;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  letter-spacing: 1px;
 }
 
 .browse-btn {
   display: inline-block;
-  background-color: #3498db;
+  background-color: transparent;
   color: white;
-  padding: 1rem 2.5rem;
-  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
   text-decoration: none;
-  border-radius: 8px;
-  transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  border-radius: 4px;
+  transition: all 0.3s;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .browse-btn:hover {
-  background-color: #2980b9;
+  background-color: white;
+  color: #2c3e50;
   transform: translateY(-2px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Mobile responsive */
 @media (max-width: 768px) {
   .home-container {
     min-height: calc(100vh - 70px - 80px);
   }
   
+  .home-content {
+    padding: 1.5rem;
+  }
+  
   .home-content h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
   }
   
   .home-content p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
   }
   
   .browse-btn {

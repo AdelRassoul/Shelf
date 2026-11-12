@@ -1,69 +1,178 @@
 .navbar {
-  background-color: #2c3e50;
+  background-color: #faf8f5;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e8e3dc;
 }
 
 .navbar-brand a {
-  color: white;
-  font-size: 1.8rem;
-  font-weight: bold;
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: normal;
   text-decoration: none;
+  font-family: 'Georgia', serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   margin: 0;
   padding: 0;
 }
 
 .navbar-links li a {
-  color: white;
+  color: #5a6c7d;
   text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  font-size: 1.05rem;
+  transition: all 0.3s;
+  padding: 0.5rem 0;
+  font-family: 'Georgia', serif;
+  position: relative;
 }
 
 .navbar-links li a:hover {
-  color: #3498db;
+  color: #8b4513;
 }
-
 
 .navbar-links li a.active {
-  background-color: #3498db;
-  color: white;
+  color: #8b4513;
 }
 
-/* Hamburger menu */
-.hamburger {
+.navbar-links li a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #8b4513;
+}
+
+.cart-badge {
+  background: #c0392b;
+  color: white;
+  border-radius: 50%;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.75rem;
+  margin-left: 0.3rem;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mobile-cart {
+  display: none;
+  position: relative;
+  color: #5a6c7d;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+.mobile-cart:hover {
+  color: #8b4513;
+}
+
+.mobile-cart svg {
+  display: block;
+}
+
+.mobile-cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #c0392b;
+  color: white;
+  border-radius: 50%;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  font-size: 0.7rem;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #faf8f5;
+}
+
+/* Bookshelf hamburger menu */
+.bookshelf-menu {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  width: 35px;
+  padding: 5px;
 }
 
-.bar {
-  width: 25px;
+.books {
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  margin-bottom: 3px;
+  height: 18px;
+  align-items: flex-end;
+}
+
+.book {
+  width: 6px;
+  border-radius: 1px;
+  transition: all 0.3s;
+}
+
+.book-1 {
+  height: 16px;
+  background: #c0392b;
+}
+
+.book-2 {
+  height: 18px;
+  background: #8b4513;
+}
+
+.book-3 {
+  height: 14px;
+  background: #27ae60;
+}
+
+.shelf {
+  width: 100%;
   height: 3px;
-  background-color: white;
-  margin: 3px 0;
-  transition: 0.3s;
+  background: #8b4513;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile responsive */
+.bookshelf-menu:hover .book {
+  transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   .navbar {
     height: 70px;
+    padding: 1rem 1.5rem;
   }
 
-  .hamburger {
+  .mobile-cart {
+    display: block;
+  }
+
+  .bookshelf-menu {
     display: flex;
   }
 
@@ -72,14 +181,15 @@
     top: 70px;
     left: 0;
     right: 0;
-    background-color: #2c3e50;
+    background-color: #faf8f5;
     flex-direction: column;
     align-items: center;
     gap: 0;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    z-index: 1000;
+    z-index: 99;
+    border-bottom: 1px solid #e8e3dc;
   }
 
   .navbar-links.active {
@@ -92,13 +202,8 @@
     text-align: center;
     padding: 0.8rem 0;
   }
-}
 
-.cart-badge {
-  background: #e74c3c;
-  color: white;
-  border-radius: 50%;
-  padding: 0.2rem 0.5rem;
-  font-size: 0.8rem;
-  margin-left: 0.3rem;
+  .navbar-links .cart-badge {
+    display: none;
+  }
 }

@@ -23,7 +23,8 @@ function Browse({ addToCart }) {
 
   return (
     <div className="browse-container">
-      <h1 className="browse-title">Browse Our Books</h1>
+      <h1 className="browse-title">Our Collection</h1>
+      <p className="browse-subtitle">Discover timeless stories and literary treasures</p>
 
       <div className="search-container">
         <input
@@ -36,9 +37,13 @@ function Browse({ addToCart }) {
       </div>
 
       <div className="books-grid">
-        {filteredBooks.map((book) => (
-          <BookCard key={book.id} book={book} onMoreInfo={handleMoreInfo} addToCart={addToCart} />
-        ))}
+        {filteredBooks.length === 0 ? (
+          <p className="no-results">No books found matching "{searchTerm}"</p>
+        ) : (
+          filteredBooks.map((book) => (
+            <BookCard key={book.id} book={book} onMoreInfo={handleMoreInfo} addToCart={addToCart} />
+          ))
+        )}
       </div>
 
       {selectedBook && (

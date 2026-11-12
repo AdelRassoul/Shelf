@@ -6,30 +6,48 @@
 
 .main-content {
   flex: 1;
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 
 .message {
   position: fixed;
-  bottom: 100px;
+  bottom: 2.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background: #2c3e50;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background: #faf8f5;
+  color: #2c3e50;
+  padding: 1.2rem 3rem;
+  border-radius: 2px;
+  border: none;
+  border-top: 1px solid #d2b48c;
+  border-bottom: 1px solid #d2b48c;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   z-index: 3000;
-  animation: slideUp 0.3s ease;
+  font-family: 'Georgia', serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  animation: messageAppear 0.5s ease;
+  max-width: 90%;
 }
 
-@keyframes slideUp {
+
+
+@keyframes messageAppear {
   from {
-    bottom: 50px;
     opacity: 0;
+    transform: translate(-50%, 10px);
   }
   to {
-    bottom: 100px;
     opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .message {
+    bottom: 1.5rem;
+    padding: 1rem 2rem;
+    font-size: 0.95rem;
   }
 }

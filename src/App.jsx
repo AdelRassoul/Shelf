@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Browse from './pages/Browse';
 import Cart from './pages/Cart';
+import About from './pages/About';
 import './App.css';
 
 function App() {
@@ -16,7 +17,6 @@ function App() {
   });
   const [message, setMessage] = useState('');
 
-  // Save cart to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
@@ -86,6 +86,7 @@ function App() {
                   showM={showM}
                 />
               } />
+              <Route path="/about" element={<About />} />
             </Routes>
           </main>
           <Footer />
