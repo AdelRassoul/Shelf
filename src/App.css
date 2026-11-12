@@ -8,3 +8,28 @@
   flex: 1;
   overflow-y: auto; 
 }
+
+.message {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 3000;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    bottom: 50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 100px;
+    opacity: 1;
+  }
+}

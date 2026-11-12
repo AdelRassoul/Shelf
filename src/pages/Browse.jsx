@@ -4,7 +4,7 @@ import BookOverlay from '../components/BookOverlay';
 import booksData from '../data/books.json';
 import '../styles/Browse.css';
 
-function Browse() {
+function Browse({ addToCart }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedBook, setSelectedBook] = useState(null);
 
@@ -24,7 +24,7 @@ function Browse() {
   return (
     <div className="browse-container">
       <h1 className="browse-title">Browse Our Books</h1>
-      
+
       <div className="search-container">
         <input
           type="text"
@@ -37,7 +37,7 @@ function Browse() {
 
       <div className="books-grid">
         {filteredBooks.map((book) => (
-          <BookCard key={book.id} book={book} onMoreInfo={handleMoreInfo} />
+          <BookCard key={book.id} book={book} onMoreInfo={handleMoreInfo} addToCart={addToCart} />
         ))}
       </div>
 

@@ -1,12 +1,8 @@
 import { useState } from 'react';
 import '../styles/BookCard.css';
 
-function BookCard({ book, onMoreInfo }) {
+function BookCard({ book, onMoreInfo, addToCart }) {
   const [imageError, setImageError] = useState(false);
-
-  const handleImageError = () => {
-    setImageError(true);
-  };
 
   return (
     <div className="book-card">
@@ -15,11 +11,11 @@ function BookCard({ book, onMoreInfo }) {
           <span className="fallback-title">{book.title}</span>
         </div>
       ) : (
-        <img 
-          src={book.image} 
-          alt={book.title} 
+        <img
+          src={book.image}
+          alt={book.title}
           className="book-image"
-          onError={handleImageError}
+          onError={() => setImageError(true)}
         />
       )}
       <div className="book-info">
@@ -30,7 +26,9 @@ function BookCard({ book, onMoreInfo }) {
           <button className="btn-more-info" onClick={() => onMoreInfo(book)}>
             More Info
           </button>
-          <button className="btn-add-cart">Add to Cart</button>
+          <button className="btn-add-cart" onClick={() => addToCart(book)}>
+            Add to Cart
+          </button>
         </div>
       </div>
     </div>
