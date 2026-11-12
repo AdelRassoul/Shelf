@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import Browse from './pages/Browse';
 import Cart from './pages/Cart';
 import About from './pages/About';
+import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
 
   const showM = (msg) => {
     setMessage(msg);
-    setTimeout(() => setMessage(''), 2000);
+    setTimeout(() => setMessage(''), 3000);
   };
 
   const addToCart = (book) => {
@@ -87,6 +88,7 @@ function App() {
                 />
               } />
               <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact showM={showM} />} />
             </Routes>
           </main>
           <Footer />

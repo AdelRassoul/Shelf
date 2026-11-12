@@ -1,0 +1,118 @@
+.contact-container {
+  padding: 4rem 2rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-size: 2.8rem;
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: #8a8178;
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+.contact-form {
+  background: white;
+  padding: 3rem;
+  border-radius: 4px;
+  border: 1px solid #e8e3dc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.6rem;
+  color: #2c3e50;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  border: 1px solid #d8d2ca;
+  border-radius: 3px;
+  background: #faf8f5;
+  color: #2c3e50;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #8b4513;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+  line-height: 1.6;
+}
+
+.submit-btn {
+  width: 100%;
+  background: #8b4513;
+  color: #faf8f5;
+  border: none;
+  padding: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Georgia', serif;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background: #6f370f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.25);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+}
