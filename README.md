@@ -1,70 +1,140 @@
-# Getting Started with Create React App
+# Shelf — Online Bookstore
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive frontend web application for browsing and purchasing books, developed
+for CSCI426: Advanced Web Programming (Project Phase 1).
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Shelf is a client-side online bookstore built with React. Users can browse a catalog
+of 50 titles, search by title or author, view detailed book information, and manage a
+shopping cart that persists across page refreshes.
 
-### `npm start`
+The project focuses on component-based architecture, client-side routing, state
+management, and responsive UI/UX design. All data is stored locally in the browser;
+no backend or payment processing is involved, and checkout is simulated.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Book catalog** — 50 titles with cover images, loaded from a local JSON dataset
+- **Search** — real-time filtering by title or author
+- **Pagination** — 12 books per page with previous/next navigation
+- **Book details** — modal overlay with description, author, and price
+- **Shopping cart** — add items, adjust quantities, remove items, live total calculation
+- **Cart persistence** — cart state saved to `localStorage` via `useEffect`
+- **Contact form** — controlled form with a single change handler and email validation
+- **Feedback messages** — non-blocking toast notifications for cart and form actions
+- **Responsive layout** — desktop, tablet, and mobile breakpoints, with a dedicated
+  mobile cart indicator and collapsible navigation
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Technology | Purpose |
+| --- | --- |
+| React 18 | Component-based UI and state management |
+| React Router DOM | Client-side routing |
+| CSS3 | Custom styling, Flexbox/Grid, media queries |
+| Web Storage API | Cart persistence in `localStorage` |
+| Open Library Covers API | Book cover images |
+| Git / GitHub | Version control and hosting |
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js 16 or later
+- npm
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+```bash
+git clone https://github.com/<your-username>/<repo-name>.git
+cd <repo-name>
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Development
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Runs the app at `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Production build
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Outputs an optimized build to the `build/` directory.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+```
+src/
+├── components/
+│   ├── BookCard.jsx          # Book preview card
+│   ├── BookOverlay.jsx       # Book details modal
+│   ├── Navbar.jsx            # Navigation and cart indicator
+│   └── Footer.jsx
+├── context/
+│   └── ActivePageContext.js  # Tracks the active route for nav highlighting
+├── data/
+│   └── books.json            # Book catalog (50 entries)
+├── pages/
+│   ├── Home.jsx
+│   ├── Browse.jsx            # Search, pagination, catalog grid
+│   ├── Cart.jsx              # Cart items and quantity controls
+│   ├── About.jsx
+│   └── Contact.jsx           # Controlled form with validation
+├── styles/                   # One stylesheet per component/page
+├── App.js                    # Routes, cart state, toast messages
+└── index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Pages
 
-### Analyzing the Bundle Size
+| Route | Page | Description |
+| --- | --- | --- |
+| `/` | Home | Landing page |
+| `/browse` | Browse | Searchable, paginated catalog |
+| `/cart` | Cart | Cart management and checkout |
+| `/about` | About | Project and technical overview |
+| `/contact` | Contact | Validated contact form |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Implementation Notes
 
-### Making a Progressive Web App
+- **Cart state** lives in `App.js` and is passed down as props. Adding an existing
+  title increments its quantity rather than creating a duplicate entry.
+- **Persistence** is handled by a `useEffect` hook that writes the cart to
+  `localStorage` whenever it changes, and a lazy `useState` initializer that reads it
+  back on load.
+- **Active navigation** is shared through `ActivePageContext` so the navbar can
+  highlight the current page without prop drilling.
+- **Form handling** uses a single state object and one `handleChange` function keyed
+  by each input's `name` attribute.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Screenshots
 
-### Advanced Configuration
+Screenshots are stored in the `screenshots/` directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+| Desktop View | Mobile View |
+| --- | --- |
+| ![Home](screenshots/home.png) | ![Mobile Home](screenshots/home_m.png) |
+| ![Browse](screenshots/browse.png) | ![Mobile Browse](screenshots/browse_m.png) |
+| ![Cart](screenshots/cart.png) | ![Mobile Cart](screenshots/cart_m.png) |
+| ![About](screenshots/about.png) | ![Mobile About](screenshots/about_m.png) |
+| ![Contact](screenshots/contact.png) | ![Mobile Contact](screenshots/contact_m.png) |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Deployment
 
-### `npm run build` fails to minify
+The application is deployed and accessible at:  
+🔗 **https://shelf-rho-three.vercel.app**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Course Information
+
+- **Course:** CSCI426 — Advanced Web Programming
+- **Department:** Computer Science and Information Technology
+- **Phase:** 1 — Frontend Development
+- **Author:** `Adel Rassoul` (`12133700`)
